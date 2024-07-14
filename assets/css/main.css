@@ -1,24 +1,16 @@
-/**
-* Template Name: MyResume
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #45505b; /* Color for headings, subheadings and title throughout the website */
@@ -29,7 +21,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #45505b;  /* The default color of the main navmenu links */
+  --nav-color: #45505b; /* The default color of the main navmenu links */
   --nav-hover-color: #0563bb; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -165,11 +157,11 @@ h6 {
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
-  .header~main {
+  .header ~ main {
     margin-left: 160px;
   }
 
-  .header~main .hero {
+  .header ~ main .hero {
     margin-left: -160px;
     width: 100vw;
   }
@@ -260,19 +252,19 @@ h6 {
 .navmenu a:hover,
 .navmenu .active,
 .navmenu .active:focus,
-.navmenu li:hover>a {
+.navmenu li:hover > a {
   color: var(--contrast-color);
   background: var(--nav-hover-color);
 }
 
 .navmenu a:hover,
-.navmenu li:hover>a {
+.navmenu li:hover > a {
   max-width: 100%;
   color: var(--contrast-color);
 }
 
 .navmenu a:hover span,
-.navmenu li:hover>a span {
+.navmenu li:hover > a span {
   display: block;
 }
 
@@ -297,7 +289,7 @@ h6 {
 }
 
 .footer p {
-  font-size: 15;
+  font-size: 15px;
   font-style: italic;
   padding: 0;
   margin: 0 0 30px 0;
@@ -412,7 +404,7 @@ h6 {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0ms !important;
   }
 }
 
@@ -443,11 +435,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -770,11 +762,10 @@ section,
   cursor: pointer;
   display: inline-block;
   padding: 8px 20px 10px 20px;
-  margin: 0;
   font-size: 15px;
   font-weight: 500;
   line-height: 1;
-  margin-bottom: 5px;
+  margin: 0 0 5px;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
   font-family: var(--heading-font);
@@ -862,7 +853,7 @@ section,
 --------------------------------------------------------------*/
 .services .service-item {
   background-color: var(--surface-color);
-  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 90px 0 rgba(0, 0, 0, 0.1);
   height: 100%;
   padding: 60px 30px;
   text-align: center;
@@ -911,7 +902,7 @@ section,
 }
 
 .services .service-item:hover {
-  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.1);
 }
 
 .services .service-item.item-cyan i {
@@ -1070,7 +1061,7 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item+.info-item {
+.contact .info-item + .info-item {
   margin-top: 40px;
 }
 
@@ -1318,7 +1309,7 @@ section,
 
 .portfolio-details .portfolio-description .testimonial-item p {
   font-style: italic;
-  margin: 0 0 15px 0 0 0;
+  margin: 0 0 15px 0;
   padding: 0;
 }
 
@@ -1327,10 +1318,10 @@ section,
 --------------------------------------------------------------*/
 .service-details .service-box {
   padding: 20px;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.service-details .service-box+.service-box {
+.service-details .service-box + .service-box {
   margin-top: 30px;
 }
 
